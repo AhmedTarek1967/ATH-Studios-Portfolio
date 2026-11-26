@@ -1,64 +1,61 @@
-# ATH Studios Portfolio
+# ATH Studios
 
-A responsive, dark-themed multi-project portfolio built with plain HTML, CSS and JavaScript.
+**Software, AI and automation projects by [Ahmed Tarek](https://github.com/AhmedTarek1967), built to solve real problems and make complex work simpler.**
 
-## Run locally
-Open `index.html` in a browser, or run a local static server:
+🔗 **Live site:** https://ahmedtarek1967.github.io/ATH-Studios-Portfolio/
+
+---
+
+## What you will find here
+
+ATH Studios is the portfolio site that collects my projects in one place. Each project has a live demo, a detail page that explains the problem and the solution, and a link to its public source code.
+
+### Featured projects
+
+| Project | What it does | Stack | Links |
+|---|---|---|---|
+| **ATH Studios n8n** | An end to end HR automation platform: job applications, AI CV evaluation, candidate coaching and policy grounded HR support. | n8n, Google Gemini, Google Workspace, Docker | [Live](https://ahmedtarek1967.github.io/ATH-Studios-n8n/) · [Code](https://github.com/AhmedTarek1967/ATH-Studios-n8n) |
+| **Dawaa** | A bilingual (Arabic and English) pharmacy assistant concept that connects customer conversations with pharmacy information and workflows. | n8n, Google Gemini, Google Sheets, Telegram | [Live](https://ahmedtarek1967.github.io/Dawaa/) · [Code](https://github.com/AhmedTarek1967/Dawaa) |
+
+> Features that depend on n8n need the configured n8n host to be online, so a live demo may not respond at every moment. Dawaa is a concept project, not a pharmacy in production.
+
+## About the site
+
+- Animated hero with a staggered entrance, mouse parallax and a custom scroll indicator
+- Large project showcase with filters, hover effects and scroll parallax
+- Full width statement section that reveals word by word as you scroll
+- Contact form with validation that prepares an email, nothing is stored
+- Responsive down to 390px, keyboard friendly, skip link, and `prefers-reduced-motion` support
+
+Built with plain **HTML, CSS and JavaScript**. No framework, no build step, no animation library. The typeface is Manrope, self hosted.
+
+## Run it locally
 
 ```bash
+git clone https://github.com/AhmedTarek1967/ATH-Studios-Portfolio.git
+cd ATH-Studios-Portfolio
 python -m http.server 5500
 ```
 
-Then visit `http://localhost:5500`.
+Then open `http://localhost:5500`.
 
-## Add a new project
-1. Create `projects/your-project/index.html`.
-2. Add a project object to `js/projects.js`, including its deployed `appUrl` and GitHub `github` URL.
-3. Use `../../css/style.css` from the nested project page.
-4. Link the project card to `projects/your-project/`.
+## Project structure
 
-The homepage cards are rendered from `js/projects.js`, so the listing stays data-driven. The **Launch application** action opens `appUrl` in a new tab. `appUrl` must be the live deployed application URL; a GitHub repository URL is not an application URL.
-
-## Deploy with GitHub Pages
-1. Create a new public repository, for example `ATH-Studios-Portfolio`.
-2. Upload the contents of this folder to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select `main` and `/ (root)`, then Save.
-6. Wait for the Pages deployment and open the published URL.
-
-## Before publishing
-- Replace the placeholder email `ahmed.tarek@example.com` in `index.html` with your preferred public contact email.
-- Confirm each project description and technology list reflects the current implementation.
-- Add real project screenshots under `assets/` when available.
-- Never put API keys, webhook secrets, passwords or private credentials in this static website.
-
-## Structure
 ```text
-ath-studios-portfolio/
-├── index.html
-├── 404.html
-├── assets/fonts/manrope.woff2
-├── css/style.css
-├── js/projects.js
-├── js/main.js
-├── projects/
-│   ├── ath-studios/index.html
-│   └── dawaa/index.html
-└── README.md
+├── index.html            Home page
+├── css/style.css         Styles and motion
+├── js/projects.js        Project data
+├── js/main.js            Rendering, filters, navigation, form
+├── js/motion.js          Load sequence, parallax, cursor, scroll effects
+├── assets/fonts/         Self hosted Manrope
+└── projects/             One detail page per project
 ```
 
+## Add a project
 
-## Application launch links
-The portfolio now opens each application in a separate browser tab. The current `appUrl` values are expected GitHub Pages URLs:
-- ATH Studios: `https://ahmedtarek1967.github.io/ATH-Studios-n8n/`
-- Dawaa: `https://ahmedtarek1967.github.io/Dawaa/`
+1. Add an entry to `js/projects.js` with its `appUrl` (the deployed app) and `github` link.
+2. Create `projects/<id>/index.html` for its detail page.
 
-These links work only after GitHub Pages is enabled and successfully deployed for the respective repositories. Confirm each URL from **Repository → Settings → Pages → Visit site**. If a project uses a backend (for example PHP), it needs a host that supports that backend; GitHub Pages only serves static files.
+## Contact
 
-## Design notes
-The redesign keeps the original palette (`#09090d`, `#14131a`, `#191720`, `#2b2934`, `#f5f0e7`, `#b4a89b`, `#e0b52f` and its gold tints) and uses a single self hosted typeface, Manrope. Contact form messages open in the visitor's email app using `data-email` on `#contact-form` in `index.html`; replace that placeholder address before publishing.
-
-
-## Landing page motion
-The homepage uses `css/landing.css` and `js/main.js` (vanilla CSS transforms, IntersectionObserver and one requestAnimationFrame loop, no animation library). Brand palette and Manrope are unchanged. Motion is disabled under `prefers-reduced-motion`, and the pinned horizontal project showcase only runs on screens 1000px wide or more. Icons are Phosphor (MIT).
+Open an issue or reach me through [GitHub](https://github.com/AhmedTarek1967).
