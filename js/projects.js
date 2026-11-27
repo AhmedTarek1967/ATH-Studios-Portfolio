@@ -5,17 +5,17 @@
 */
 const projects = [
   {
-    id: "ath-studios",
+    id: "hiringhr",
     number: "01",
-    title: "ATH Studios — n8n",
+    title: "HiringHR",
     category: "AI & Automation",
-    description: "An end to end HR automation platform for job applications, AI CV evaluation, candidate coaching and policy grounded HR support.",
+    description: "Hiring and HR automated end to end: PDF CV applications, AI scoring of every candidate, personal coaching reports, a policy grounded HR chatbot and failure monitoring.",
     tags: ["n8n", "Google Gemini", "Google Workspace", "Docker"],
     theme: "automation",
     mark: "AI",
     caption: "INTELLIGENT HR WORKFLOWS",
-    appUrl: "https://ahmedtarek1967.github.io/ATH-Studios-n8n/",
-    github: "https://github.com/AhmedTarek1967/ATH-Studios-n8n"
+    appUrl: "https://ahmedtarek1967.github.io/HiringHR_automated/",
+    github: "https://github.com/AhmedTarek1967/HiringHR_automated"
   },
   {
     id: "dawaa",

@@ -14,7 +14,7 @@ ATH Studios is the portfolio site that collects my projects in one place. Each p
 
 | Project | What it does | Stack | Links |
 |---|---|---|---|
-| **ATH Studios n8n** | An end to end HR automation platform: job applications, AI CV evaluation, candidate coaching and policy grounded HR support. | n8n, Google Gemini, Google Workspace, Docker | [Live](https://ahmedtarek1967.github.io/ATH-Studios-n8n/) · [Code](https://github.com/AhmedTarek1967/ATH-Studios-n8n) |
+| **HiringHR** | Hiring and HR automated end to end: PDF CV applications, AI scoring of every candidate, personal coaching reports, a policy grounded HR chatbot and failure monitoring. | n8n, Google Gemini, Google Workspace, Docker | [Live](https://ahmedtarek1967.github.io/HiringHR_automated/) · [Code](https://github.com/AhmedTarek1967/HiringHR_automated) |
 | **Dawaa** | A bilingual (Arabic and English) pharmacy assistant concept that connects customer conversations with pharmacy information and workflows. | n8n, Google Gemini, Google Sheets, Telegram | [Live](https://ahmedtarek1967.github.io/Dawaa/) · [Code](https://github.com/AhmedTarek1967/Dawaa) |
 
 > Features that depend on n8n need the configured n8n host to be online, so a live demo may not respond at every moment. Dawaa is a concept project, not a pharmacy in production.
